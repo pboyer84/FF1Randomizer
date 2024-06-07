@@ -2542,6 +2542,42 @@ namespace FF1Lib
 				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("SendMasamuneHome"));
 			}
 		}
+		public HeirloomBearers MasamuneBearers
+		{
+			get => Flags.MasamuneBearers;
+			set
+			{
+				Flags.MasamuneBearers = value;
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("MasamuneBearers"));
+			}
+		}
+		public HeirloomBearers XCaliburBearers
+		{
+			get => Flags.XCaliburBearers;
+			set
+			{
+				Flags.XCaliburBearers = value;
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("XCaliburBearers"));
+			}
+		}
+		public HeirloomBearers KatanaBearers
+		{
+			get => Flags.KatanaBearers;
+			set
+			{
+				Flags.KatanaBearers = value;
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("KatanaBearers"));
+			}
+		}
+		public HeirloomBearers VorpalBearers
+		{
+			get => Flags.VorpalBearers;
+			set
+			{
+				Flags.VorpalBearers = value;
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs("VorpalBearers"));
+			}
+		}
 		public bool? NoMasamune
 		{
 			get => Flags.NoMasamune;

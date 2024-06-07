@@ -62,6 +62,24 @@
 	<TriStateCheckBox UpdateToolTip="@UpdateToolTipID" Indent Id="SendMasamuneHomeCheckBox" IsEnabled="@((Flags.NoMasamune != true) && Flags.GuaranteedMasamune != false && Flags.IncentivizeMasamune == false)" @bind-Value="Flags.SendMasamuneHome">Send Masamune Home</TriStateCheckBox>
 	<TriStateCheckBox UpdateToolTip="@UpdateToolTipID" Id="masaGuardianCheckBox" @bind-Value="Flags.TCMasaGuardian">WarMech, Guardian of Masamune</TriStateCheckBox>
 
+    <div class="checkbox-cell"></div>
+    <h4>Heirlooms</h4>
+    <div class="row">
+        <div class="col-3 noleftpadding">Masamune:</div>
+        <div class="col-9"><EnumDropDown UpdateToolTip="@UpdateToolTipID" Id="masamuneBearers" @bind-Value="Flags.MasamuneBearers"></EnumDropDown></div>
+    </div>
+    <div class="row">
+        <div class="col-3 noleftpadding">XCalibur:</div>
+                <div class="col-9"><EnumDropDown UpdateToolTip="@UpdateToolTipID" Id="xcaliburBearers" @bind-Value="Flags.XCaliburBearers"></EnumDropDown></div>
+    </div>
+    <div class="row">
+        <div class="col-3 noleftpadding">Katana:</div>
+        <div class="col-9"><EnumDropDown UpdateToolTip="@UpdateToolTipID" Id="katanaBearers" @bind-Value="Flags.KatanaBearers"></EnumDropDown></div>
+    </div>
+    <div class="row">
+        <div class="col-3 noleftpadding">Vorpal:</div>
+        <div class="col-9"><EnumDropDown UpdateToolTip="@UpdateToolTipID" Id="vorpalBearers" @bind-Value="Flags.VorpalBearers"></EnumDropDown></div>
+    </div>
 </div>
 	<div class="clear-it"></div>
 	}

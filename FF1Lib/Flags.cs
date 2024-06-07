@@ -418,6 +418,10 @@ namespace FF1Lib
 		public bool? NoFloater { get; set; } = false;
 		public bool? GuaranteedMasamune { get; set; } = false;
 		public bool? SendMasamuneHome { get; set; } = false;
+		public HeirloomBearers MasamuneBearers { get; set; } = HeirloomBearers.None;
+		public HeirloomBearers XCaliburBearers { get; set; } = HeirloomBearers.None;
+		public HeirloomBearers KatanaBearers { get; set; } = HeirloomBearers.None;
+		public HeirloomBearers VorpalBearers { get; set; } = HeirloomBearers.None;
 
 		public ConsumableChestSet MoreConsumableChests { get; set; } = ConsumableChestSet.Vanilla;
 
